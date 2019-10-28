@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if name=='管理员' %}
+    <p>原来你是管理员啊</p>
+    {% else %}
+    <p>欢迎你 {{ name }}</p>
+    {% endif %}
+</body>
+</html>
