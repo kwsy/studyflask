@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>分数</th>
+    </tr>
+
+    <tbody>
+    {% for stu in stu_lst %}
+    <tr>
+        <td>{{ stu['name'] }}</td>
+        <td>{{ stu['age'] }}</td>
+        <td>{{ stu['score'] }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
